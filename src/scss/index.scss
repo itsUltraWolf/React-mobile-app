@@ -1,0 +1,159 @@
+@import "config/vars";
+@import "config/mixins";
+
+html,
+body {
+    background: $reactBgColor2 !important;
+    height: 100%;
+
+    h1 {
+        font-size: 32px;
+        color: $whiteColor;
+
+        span {
+            @include planetN(24px);            
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 16px;
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            font-size: 22px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 28px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        color: $whiteColor;
+        font-size: 26px;
+        font-weight: 400;
+
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 20px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 22px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 24px;
+        }
+    }
+
+    .btn {
+        background-color: $reactBgColor1;
+        color: $blackColor;
+        font-size: 26px;
+
+        &:hover {
+            background-color: $reactBgColor2;
+            border: 1px solid $reactBgColor1;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 20px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 22px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 24px;
+        }
+    }
+
+    .root-class {
+        height: 100%;
+
+        .test-content {
+            flex: 1 0 auto;
+
+            .logo {
+                width: 25%;
+            }
+
+            .counter {
+                font-size: 24px;
+            }
+        }
+
+        footer {
+            flex: 0 0 auto;
+
+            span,
+            p {
+                font-size: 26px;
+
+                @media (max-width: 575px) {
+                    font-size: 14px;
+                }
+
+                @media (min-width: 576px) and (max-width: 767px) {
+                    font-size: 18px;
+                }
+
+                @media (min-width: 768px) and (max-width: 991px) {
+                    font-size: 20px;
+                }
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 22px;
+                }
+
+                @media (min-width: 1200px) and (max-width: 1399px) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

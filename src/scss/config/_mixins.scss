@@ -1,0 +1,9 @@
+@mixin planetN($fs) {
+    font-family: $planetN;
+    font-size: $fs;
+}
+
+@mixin planetN3D($fs) {
+    font-family: $planetN3D;
+    font-size: $fs;
+}
